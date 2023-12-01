@@ -1,0 +1,96 @@
+.adding-department-form-modal {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 60%;
+    background-color: #fff;
+    border: 3px solid var(--dark);
+    border-radius: 1%;
+    box-shadow: 24px;
+    padding: 2em 4em;
+}
+
+.adding-department-form-modal h2 {
+    font-size: 24px;
+    color: var(--dark);
+}
+
+.adding-department-form-modal form {
+    margin-top: 1em;
+}
+
+.Toastify {
+    font-family: 'Arial', sans-serif;
+  }
+  
+  .Toastify__toast-container {
+    top: auto;
+    bottom: 20px; /* Możesz dostosować wartość, aby uzyskać pożądaną odległość od dołu */
+     /* Możesz dostosować wartość, aby uzyskać pożądaną odległość od lewej krawędzi */
+
+  }
+
+  /* Styl dla sukcesu */
+  .Toastify__toast--success {
+    background-color: #4caf50; /* Zielony kolor dla sukcesu */
+    color: #fff; /* Biały kolor tekstu */
+  }
+  
+  /* Styl dla błędu */
+  .Toastify__toast--error {
+    background-color: #f44336; /* Czerwony kolor dla błędu */
+    color: #fff; /* Biały kolor tekstu */
+  }
+  
+  /* Styl dla ostrzeżenia */
+  .Toastify__toast--warning {
+    background-color: #ff9800; /* Pomarańczowy kolor dla ostrzeżenia */
+    color: #fff; /* Biały kolor tekstu */
+  }
+  
+  /* Styl dla informacji */
+  .Toastify__toast--info {
+    background-color: #2196f3; /* Niebieski kolor dla informacji */
+    color: #fff; /* Biały kolor tekstu */
+  }
+  
+  /* Styl dla domyślnego toastu */
+  .Toastify__toast {
+    background-color: #333; /* Kolor tła dla domyślnego toastu */
+    color: #fff; /* Biały kolor tekstu */
+  }
+
+
+#department-accept-button-super-admin {
+    background-color: var(--dark);
+    color: #FFF;
+    font-size: 18px;
+    margin-top: 1em;
+    height: 50px;
+    border-radius: 5px;
+    border: none;
+    text-transform: uppercase;
+    cursor: pointer;
+    width: 18%;
+}
+
+.adding-department-form-input {
+    margin: 15px;
+    height: 40px;
+    border: solid 1px rgb(196, 196, 196);
+    font-size: 12pt;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.adding-department-form {
+    display: flex;
+    flex-direction: column;
+}
+
+@media (max-width: 768px) {
+    #department-accept-button-super-admin {
+        font-size: 14px;
+        width: 60%;
+    }
+};

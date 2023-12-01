@@ -1,0 +1,151 @@
+/* Stylizacja tabelki */
+.viewusers-table-superadmin {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: #4a4646;
+}
+
+.viewusers-td-superadmin {
+  text-align: left;
+  padding: 10px;
+  border: 1px solid #ccc;
+  width: auto;
+}
+
+.viewusers-tr-superadmin:nth-child(even) {
+  background-color: #5a5656;
+}
+
+.viewusers-tr-superadmin:hover {
+  background-color: #5a5656;
+}
+
+.viewusers-super-admin-container {
+  display: flex;
+  flex-direction: row; 
+  flex-wrap: wrap;
+  background-color: #2c363b;
+  color: white;
+}
+
+.viewusers-super-admin-element {
+  flex: 1;
+  background-color: #2c363b;
+  margin: 3%;
+}
+
+.viewusers-super-admin-navbar {
+  width: auto;
+  background-color: var(--dark);
+}
+
+.footer-viewusers-super-admin {
+  display: flex;
+  flex-direction: column; 
+}
+
+.viewusers-super-admin-item {
+  background-color: white;
+  width: 95%;
+  padding: 2%;
+  margin: 1%;
+  border-radius: 25px;
+  opacity: 80%;
+  transition: all 0.3s;
+  max-height: 60px;
+  overflow: hidden;
+  border: 1px solid #ccc;
+}
+
+.viewusers-super-admin-item.expanded {
+  max-height: none;
+  border: 1px solid #ccc;
+}
+
+.viewusers-search {
+  margin: 2%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.input-search-style-viewallusers {
+  border-radius: 2px;
+  border: none;
+  margin-left: 8px;
+}
+
+.viewusers-expand-button {
+  display: flex;
+  justify-content: flex-end;
+  cursor: pointer;
+}
+
+.viewusers-download-link {
+  text-align: right;
+}
+
+.viewusers-download-link a {
+  text-decoration: none;
+}
+
+.viewusers-download-link a:visited {
+  color: #0ca3ff;
+}
+
+.viewusers-download-link a:link {
+  color: var(--primary);
+}
+
+.viewusers-super-admin-item.expanded .viewusers-download-link {
+  display: block;
+}
+
+.viewusers-thead {
+  font-size: 14pt;
+}
+
+.viewusers-table-all-users {
+  max-height: 480px; /* Ustaw maksymalną wysokość, aby wyświetlać maksymalnie 10 wierszy */
+  overflow-y: auto; /* Dodaj pasek przewijania, gdy tabela przekracza maksymalną wysokość */
+  background-color: rgb(74, 74, 74);
+  border: 3px solid grey;
+}
+
+.viewusers-tr-all-users {
+  border: 3px solid;
+}
+
+/* Media query dla ekranów o szerokości 768px lub mniejszej */
+@media (max-width: 768px) {
+  .viewusers-thead {
+    font-size: 8pt;
+  }
+
+  .viewusers-super-admin-element h1 {
+    padding: 25px;
+  }
+
+  .viewusers-table-superadmin td {
+    text-align: left;
+    width: 600px;
+    font-size: 9pt;
+  }
+
+  .viewusers-super-admin-item {
+    padding: 6%;
+    width: 90%;
+    margin: 1%;
+  }
+
+  .viewusers-expand-button {
+    position: relative;
+    top: -15px;
+  }
+
+  .viewusers-download-link a,
+  .viewusers-download-link a:visited,
+  .viewusers-download-link a:link {
+    font-size: 9pt;
+  }
+}

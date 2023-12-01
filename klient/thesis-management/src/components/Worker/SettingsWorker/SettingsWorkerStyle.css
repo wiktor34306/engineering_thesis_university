@@ -1,0 +1,119 @@
+.settings-worker-container {
+    display: flex;
+    flex-direction: row; 
+    flex-wrap: wrap;
+    background-color: #9cc9e6;
+  }
+  
+  .settings-worker-element {
+    flex:1;
+    background-color: #9cc9e6;
+    margin: 3%;
+  }
+  
+  .settings-worker-navbar {
+    width: auto;
+  }
+  
+  .footer-settings-worker {
+    display: flex;
+    flex-direction: column; 
+  }
+
+  .settings-table th {
+    text-align: left;
+    width: 600px;
+  }
+
+  .div-with-list-of-settings {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .settings-worker-item {
+    background-color: white;
+    width: 95%;
+    padding: 2%;
+    margin: 1%;
+    border-radius: 25px;
+    opacity: 80%;
+  }
+
+  .settings-worker-item {
+    transition: all 0.3s;
+    max-height: 60px;
+    overflow: hidden;
+    border: 1px solid #ccc;
+  }
+  
+  .settings-worker-item.expanded {
+    max-height: none;
+    border: 1px solid #ccc;
+  }
+  
+  .settings-expand-button {
+    display: flex;
+    justify-content: flex-end;
+    cursor: pointer;
+    padding: 10px;
+  }
+  
+  .settings-download-link {
+    text-align: right;
+  }
+
+  .settings-download-link a{
+    text-decoration: none;
+  }
+
+  .settings-download-link a:visited{
+    color: #0ca3ff;
+  }
+
+  .settings-download-link a:link{
+    color: var(--primary);
+  }
+  
+  .settings-worker-item.expanded .settings-download-link {
+    display: block;
+  }
+  
+  .settings-thead {
+    font-size: 14pt;
+  }
+
+  /* Media query dla ekranów o szerokości 768px lub mniejszej */
+@media (max-width: 768px) {
+  .settings-thead {
+    font-size: 8pt;
+  }
+
+  .settings-worker-element h1{
+    padding: 25px;
+  }
+
+  .settings-table td {
+    text-align: left;
+    width: 600px;
+    font-size: 9pt;
+  }
+
+  .settings-worker-item {
+    padding: 6%;
+    width: 90%;
+    margin: 1%;
+  }
+
+  .settings-expand-button {
+    position: relative; /* Ustaw pozycję względną */
+    top: -15px; /* Przesuń element w górę o 10 pikseli */
+  }
+
+  .settings-download-link a,
+  .settings-download-link a:visited,
+  .settings-download-link a:link {
+    font-size: 9pt;
+  }
+  
+  
+}

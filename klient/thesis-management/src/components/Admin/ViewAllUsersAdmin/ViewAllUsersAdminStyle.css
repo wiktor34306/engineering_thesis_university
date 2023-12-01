@@ -1,0 +1,165 @@
+/* Stylizacja tabelki */
+.viewusers-table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: white;
+}
+
+.viewusers-th {
+  background-color: #9cc9e6;
+  text-align: left;
+  padding: 10px;
+  width: auto;
+}
+
+.viewusers-td {
+  text-align: left;
+  padding: 10px;
+  border: 1px solid #ccc;
+  width: auto;
+}
+
+/* Stylizacja wierszy tabelki */
+.viewusers-tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+/* Stylizacja hover (opcjonalnie) */
+.viewusers-tr:hover {
+  background-color: #ddd;
+}
+
+/* Stylizacja dla innych elementów */
+.viewusers-admin-container {
+  display: flex;
+  flex-direction: row; 
+  flex-wrap: wrap;
+  background-color: #9cc9e6;
+}
+
+.viewusers-admin-element {
+  flex: 1;
+  background-color: #9cc9e6;
+  margin: 3%;
+}
+
+.viewusers-admin-navbar {
+  width: auto;
+  background-color: var(--dark);
+}
+
+.footer-viewusers-admin {
+  display: flex;
+  flex-direction: column; 
+}
+
+.div-with-list-of-viewusers {
+  display: flex;
+  flex-direction: column;
+}
+
+.viewusers-admin-item {
+  background-color: white;
+  width: 95%;
+  padding: 2%;
+  margin: 1%;
+  border-radius: 25px;
+  opacity: 80%;
+  transition: all 0.3s;
+  max-height: 60px;
+  overflow: hidden;
+  border: 1px solid #ccc;
+}
+
+.viewusers-admin-item.expanded {
+  max-height: none;
+  border: 1px solid #ccc;
+}
+
+.viewusers-search {
+  margin: 2%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.input-search-style-viewallusers {
+  border-radius: 2px;
+  border: none;
+  margin-left: 8px;
+}
+
+.viewusers-expand-button {
+  display: flex;
+  justify-content: flex-end;
+  cursor: pointer;
+}
+
+.viewusers-download-link {
+  text-align: right;
+}
+
+.viewusers-download-link a {
+  text-decoration: none;
+}
+
+.viewusers-download-link a:visited {
+  color: #0ca3ff;
+}
+
+.viewusers-download-link a:link {
+  color: var(--primary);
+}
+
+.viewusers-admin-item.expanded .viewusers-download-link {
+  display: block;
+}
+
+.viewusers-thead {
+  font-size: 14pt;
+}
+
+.viewusers-table-all-users {
+  max-height: 480px; /* Ustaw maksymalną wysokość, aby wyświetlać maksymalnie 10 wierszy */
+  overflow-y: auto; /* Dodaj pasek przewijania, gdy tabela przekracza maksymalną wysokość */
+  background-color: white;
+  border: 3px solid grey;
+}
+
+.viewusers-tr-all-users {
+  border: 3px solid;
+}
+
+/* Media query dla ekranów o szerokości 768px lub mniejszej */
+@media (max-width: 768px) {
+  .viewusers-thead {
+    font-size: 8pt;
+  }
+
+  .viewusers-admin-element h1 {
+    padding: 25px;
+  }
+
+  .viewusers-table td {
+    text-align: left;
+    width: 600px;
+    font-size: 9pt;
+  }
+
+  .viewusers-admin-item {
+    padding: 6%;
+    width: 90%;
+    margin: 1%;
+  }
+
+  .viewusers-expand-button {
+    position: relative;
+    top: -15px;
+  }
+
+  .viewusers-download-link a,
+  .viewusers-download-link a:visited,
+  .viewusers-download-link a:link {
+    font-size: 9pt;
+  }
+}
